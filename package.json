@@ -6,18 +6,23 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "watch": "json-server -w --port 4000 ./_data/db.json"
   },
   "dependencies": {
+    "@supabase/auth-helpers-nextjs": "^0.8.1",
+    "@supabase/supabase-js": "^2.38.0",
+    "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
-    "next": "13.5.4"
+    "react-icons": "^4.11.0"
   },
   "devDependencies": {
     "autoprefixer": "^10",
-    "postcss": "^8",
-    "tailwindcss": "^3",
+    "encoding": "^0.1.13",
     "eslint": "^8",
-    "eslint-config-next": "13.5.4"
+    "eslint-config-next": "13.5.4",
+    "postcss": "^8",
+    "tailwindcss": "^3"
   }
 }
